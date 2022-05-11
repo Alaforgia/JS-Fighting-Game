@@ -16,6 +16,11 @@ class Sprite {
     c.fillStyle = "red";
     c.fillRect(this.position.x, this.position.y, 50, 150);
   }
+
+  update() {
+    this.draw();
+    this.position.y += 10; // this is shorthand for this.position.y + 10
+  }
 }
 
 const player = new Sprite({
