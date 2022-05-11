@@ -7,7 +7,7 @@ canvas.height = 576;
 c.fillRect(0, 0, canvas.width, canvas.height);
 
 class Sprite {
-  constructor(position, velocity) {
+  constructor({ position, velocity }) {
     this.position = position;
     this.velocity = velocity;
     this.height = 150;
@@ -20,8 +20,7 @@ class Sprite {
 
   update() {
     this.draw();
-    this.position.y += this.velocity.y; // this is shorthand for this.position.y + 10
-
+    
     if (this.position.y + this.height + this.velocity.y >= canvas.height) {
       this.velocity.y = 0;
     }
@@ -50,7 +49,7 @@ const enemy = new Sprite({
   },
 });
 
-console.log(player);
+// console.log(player);
 
 function animate() {
   window.requestAnimationFrame(animate);
@@ -58,7 +57,7 @@ function animate() {
   c.fillRect(0, 0, canvas.width, canvas.height);
   player.update();
   enemy.update();
-  console.log("go");
+  // console.log("go");
 }
 
 animate();
