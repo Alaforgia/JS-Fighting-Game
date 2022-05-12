@@ -132,5 +132,18 @@ window.addEventListener("keyup", (event) => {
       keys.w.pressed = false;
       break;
   }
+
+  // enemy keys
+  switch (event.key) {
+    case "d":
+      keys.d.pressed = false;
+      break;
+    case "a":
+      keys.a.pressed = false;
+      break;
+    case "w":
+      keys.w.pressed = false;
+      break;
+  }
   console.log(event.key);
 });
