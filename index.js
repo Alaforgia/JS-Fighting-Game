@@ -110,11 +110,11 @@ window.addEventListener("keydown", (event) => {
       break;
     case "ArrowLeft":
       keys.ArrowLeft.pressed = true;
-      lastKey = "ArrowLeft";
+      enemy.lastKey = "ArrowLeft";
       break;
-    case "w":
-      player.velocity.y = -10;
-      lastKey = "w";
+    case "ArrowUp":
+      enemy.velocity.y = -10;
+      lastKey = "ArrowUp";
       break;
   }
   console.log(event.key);
