@@ -119,7 +119,7 @@ window.addEventListener("keydown", (event) => {
       player.lastKey = "a";
       break;
     case "w":
-      player.velocity.y = -30;
+      player.velocity.y = -20;
       player.lastKey = "w";
       break;
 
@@ -132,7 +132,7 @@ window.addEventListener("keydown", (event) => {
       enemy.lastKey = "ArrowLeft";
       break;
     case "ArrowUp":
-      enemy.velocity.y = -30;
+      enemy.velocity.y = -20;
       lastKey = "ArrowUp";
       break;
   }
