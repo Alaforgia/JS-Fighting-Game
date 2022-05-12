@@ -62,6 +62,7 @@ const keys = {
     pressed: false,
   },
 };
+let lastKey;
 
 function animate() {
   window.requestAnimationFrame(animate);
@@ -85,9 +86,11 @@ window.addEventListener("keydown", (event) => {
   switch (event.key) {
     case "d":
       keys.d.pressed = true;
+      lastKey = "d";
       break;
     case "a":
       keys.a.pressed = true;
+      lastKey = "a";
       break;
   }
   console.log(event.key);
