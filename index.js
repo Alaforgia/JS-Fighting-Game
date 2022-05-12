@@ -74,3 +74,13 @@ window.addEventListener("keydown", (event) => {
   }
   console.log(event.key);
 });
+
+window.addEventListener("keyup", (event) => {
+  switch (event.key) {
+    case "d":
+      player.velocity.x = 0;
+
+      break;
+  }
+  console.log(event.key);
+});
