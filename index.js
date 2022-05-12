@@ -82,7 +82,7 @@ animate();
 window.addEventListener("keydown", (event) => {
   switch (event.key) {
     case "d":
-      keys.a.pressed = true;
+      keys.d.pressed = true;
       break;
     case "a":
       keys.a.pressed = true;
@@ -94,7 +94,7 @@ window.addEventListener("keydown", (event) => {
 window.addEventListener("keyup", (event) => {
   switch (event.key) {
     case "d":
-      keys.a.pressed = false;
+      keys.d.pressed = false;
       break;
     case "a":
       keys.a.pressed = false;
