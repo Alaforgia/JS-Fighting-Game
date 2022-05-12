@@ -66,11 +66,10 @@ animate();
 
 window.addEventListener("keydown", (event) => {
   switch (event.key) {
-    case 'd':
-      
+    case "d":
+      player.velocity.x = 1;
+
       break;
-  
-  
   }
   console.log(event.key);
 });
