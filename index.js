@@ -73,6 +73,9 @@ const keys = {
   ArrowLeft: {
     pressed: false,
   },
+  ArrowUp: {
+    pressed: false,
+  },
 };
 // let lastKey;
 
