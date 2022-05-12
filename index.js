@@ -67,6 +67,12 @@ const keys = {
   w: {
     pressed: false,
   },
+  ArrowRight: {
+    pressed: false,
+  },
+  ArrowLeft: {
+    pressed: false,
+  },
 };
 let lastKey;
 
@@ -88,10 +94,10 @@ function animate() {
 
   // enemy movement
 
-  if (keys.ArrowLeft.pressed && lastKey === "ArrowLeft") {
-    player.velocity.x = -1;
-  } else if (keys.ArrowRight.pressed && lastKey === "ArrowRight") {
-    player.velocity.x = 1;
+  if (keys.ArrowLeft.pressed && enemy.lastKey === "ArrowLeft") {
+    enemy.velocity.x = -1;
+  } else if (keys.ArrowRight.pressed && enemy.lastKey === "ArrowRight") {
+    enemy.velocity.x = 1;
   }
 }
 
