@@ -58,6 +58,9 @@ const keys = {
   a: {
     pressed: false,
   },
+  d: {
+    pressed: false,
+  },
 };
 
 function animate() {
@@ -66,7 +69,12 @@ function animate() {
   c.fillRect(0, 0, canvas.width, canvas.height);
   player.update();
   enemy.update();
-  // console.log("go");
+
+  if (keys.a.pressed) {
+    player.velocity.x = 1;
+  } else if (keys.d.pressed) {
+    player.velocity.x = 1;
+  }
 }
 
 animate();
