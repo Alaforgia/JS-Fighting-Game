@@ -28,7 +28,7 @@ class Sprite {
 
     if (this.position.y + this.height + this.velocity.y >= canvas.height) {
       this.velocity.y = 0;
-    } else this.position.y += gravity;
+    } else this.velocity.y += gravity;
   }
 }
 
