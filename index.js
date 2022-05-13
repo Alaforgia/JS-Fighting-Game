@@ -12,6 +12,7 @@ class Sprite {
   constructor({ position, velocity, color = "red" }) {
     this.position = position;
     this.velocity = velocity;
+    this.width = 50;
     this.height = 150;
     this.lastKey;
     this.attackBox = {
@@ -24,7 +25,7 @@ class Sprite {
 
   draw() {
     c.fillStyle = this.color;
-    c.fillRect(this.position.x, this.position.y, 50, this.height);
+    c.fillRect(this.position.x, this.position.y, this.width, this.height);
 
     // attackBox
     c.fillStyle = "green";
