@@ -153,6 +153,9 @@ window.addEventListener("keydown", (event) => {
       player.velocity.y = -20;
       player.lastKey = "w";
       break;
+    case " ":
+      player.attack();
+      break;
 
     case "ArrowRight":
       keys.ArrowRight.pressed = true;
