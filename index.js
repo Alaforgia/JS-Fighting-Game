@@ -23,7 +23,7 @@ class Sprite {
   }
 
   draw() {
-    c.fillStyle = "red";
+    c.fillStyle = this.color;
     c.fillRect(this.position.x, this.position.y, 50, this.height);
 
     // attackBox
@@ -66,7 +66,7 @@ const enemy = new Sprite({
   color: "blue",
 });
 
-// console.log(player);
+console.log(enemy);
 
 const keys = {
   a: {
