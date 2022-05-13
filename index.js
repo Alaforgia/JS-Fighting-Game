@@ -13,9 +13,12 @@ class Sprite {
     this.position = position;
     this.velocity = velocity;
     this.height = 150;
-    this.lastKey;attackBox = {
-      position:
-    }
+    this.lastKey;
+    attackBox = {
+      position: this.position,
+      width: 100,
+      height: 50,
+    };
   }
 
   draw() {
