@@ -116,7 +116,9 @@ function animate() {
   }
 
   // detect for collision
-  
+  if (player.attackBox.position.x + player.attackBox.width >= enemy.position.x) {
+    console.log("go");
+  }
 }
 
 animate();
