@@ -114,6 +114,9 @@ function animate() {
   } else if (keys.ArrowRight.pressed && enemy.lastKey === "ArrowRight") {
     enemy.velocity.x = 5;
   }
+
+  // detect for collision
+  
 }
 
 animate();
