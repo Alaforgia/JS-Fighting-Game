@@ -63,6 +63,7 @@ const enemy = new Sprite({
     x: 0,
     y: 10,
   },
+  color: "blue",
 });
 
 // console.log(player);
