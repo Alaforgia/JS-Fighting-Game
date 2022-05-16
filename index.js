@@ -6,6 +6,7 @@ canvas.height = 576;
 
 c.fillRect(0, 0, canvas.width, canvas.height);
 
+// gravity fall value
 const gravity = 0.7;
 
 class Sprite {
