@@ -10,7 +10,7 @@ c.fillRect(0, 0, canvas.width, canvas.height);
 const gravity = 0.7;
 
 class Sprite {
-  constructor({ position, velocity, color = "red" }) {
+  constructor({ position, velocity, color = "red", offset }) {
     this.position = position;
     this.velocity = velocity;
     this.width = 50;
@@ -21,6 +21,7 @@ class Sprite {
         x: this.position.x,
         y: this.position.y,
       },
+      offset,
       width: 100,
       height: 50,
     };
@@ -41,7 +42,7 @@ class Sprite {
 
   update() {
     this.draw();
-    this.attackBox.position.x = this.position.x;
+    this.attackBox.position.x = this.position.x - this.attackBox.offset.x;
     this.attackBox.position.y = this.position.y;
 
     this.position.x += this.velocity.x;
