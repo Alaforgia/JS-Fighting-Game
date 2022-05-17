@@ -42,7 +42,7 @@ class Sprite {
 
   update() {
     this.draw();
-    this.attackBox.position.x = this.position.x - this.attackBox.offset.x;
+    this.attackBox.position.x = this.position.x + this.attackBox.offset.x;
     this.attackBox.position.y = this.position.y;
 
     this.position.x += this.velocity.x;
@@ -73,7 +73,7 @@ const player = new Sprite({
   offset: {
     x: 0,
     y: 0,
-  }
+  },
 });
 
 const enemy = new Sprite({
@@ -86,6 +86,10 @@ const enemy = new Sprite({
     y: 10,
   },
   color: "blue",
+  offset: {
+    x: -50,
+    y: 0,
+  },
 });
 
 console.log(enemy);
