@@ -70,6 +70,10 @@ const player = new Sprite({
     x: 0,
     y: 10,
   },
+  offset: {
+    x: 0,
+    y: 0,
+  }
 });
 
 const enemy = new Sprite({
