@@ -41,6 +41,8 @@ class Sprite {
 
   update() {
     this.draw();
+    this.attackBox.position.x = this.position.x;
+    this.attackBox.position.y = this.position.y;
 
     this.position.x += this.velocity.x;
     this.position.y += this.velocity.y;
