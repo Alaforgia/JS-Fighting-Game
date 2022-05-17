@@ -212,7 +212,7 @@ window.addEventListener("keydown", (event) => {
       enemy.isAttacking = true;
       break;
   }
-  console.log(event.key);
+  // console.log(event.key);
 });
 
 window.addEventListener("keyup", (event) => {
@@ -240,5 +240,5 @@ window.addEventListener("keyup", (event) => {
       keys.ArrowUp.pressed = false;
       break;
   }
-  console.log(event.key);
+  // console.log(event.key);
 });
