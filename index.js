@@ -17,7 +17,10 @@ class Sprite {
     this.height = 150;
     this.lastKey;
     this.attackBox = {
-      position: this.position,
+      position: {
+        x: this.position.x,
+        y: this.position.y,
+      },
       width: 100,
       height: 50,
     };
