@@ -127,6 +127,10 @@ function rectangularCollision({ rectangle1, rectangle2 }) {
   );
 }
 
+function decreaseTimer(){
+  
+}
+
 function animate() {
   window.requestAnimationFrame(animate);
   c.fillStyle = "black";
