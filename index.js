@@ -126,9 +126,11 @@ function rectangularCollision({ rectangle1, rectangle2 }) {
     rectangle1.isAttacking
   );
 }
-
-function decreaseTimer(){
-  
+// function that handle the in-game timer countdown
+let timer = 10;
+function decreaseTimer() {
+  setTimeout(decreaseTimer);
+  if (timer > 0) timer--;
 }
 
 function animate() {
