@@ -173,7 +173,7 @@ function animate() {
     enemy.isAttacking
   ) {
     enemy.isAttacking = false;
-    console.log("enemy attack");
+    document.querySelector("#enemyHealth").style.width = enemy.health;
   }
 }
 
