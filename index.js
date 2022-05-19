@@ -126,14 +126,19 @@ function rectangularCollision({ rectangle1, rectangle2 }) {
     rectangle1.isAttacking
   );
 }
-// function that handle the in-game timer countdown
+// function that handles the in-game timer countdown
 let timer = 10;
 function decreaseTimer() {
   setTimeout(decreaseTimer, 1000);
   if (timer > 0) {
     timer--;
-    document.querySelector("#timer");
+    document.querySelector("#timer").innerHTML = timer;
   }
+if (player.health === enemy.health) {
+  
+  
+}
+
 }
 
 decreaseTimer();
