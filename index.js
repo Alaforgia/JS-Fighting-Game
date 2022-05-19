@@ -162,7 +162,7 @@ function animate() {
   ) {
     player.isAttacking = false;
     enemy.health -= 20;
-    document.querySelector("#enemyHealth").style.width = enemy.health;
+    document.querySelector("#enemyHealth").style.width = enemy.health + "%";
   }
 
   if (
@@ -173,7 +173,8 @@ function animate() {
     enemy.isAttacking
   ) {
     enemy.isAttacking = false;
-    document.querySelector("#enemyHealth").style.width = enemy.health;
+    player.health -= 20;
+    document.querySelector("#playerHealth").style.width = player.health + "%";
   }
 }
 
