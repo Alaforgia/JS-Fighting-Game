@@ -196,6 +196,11 @@ function animate() {
     player.health -= 20;
     document.querySelector("#playerHealth").style.width = player.health + "%";
   }
+
+  //end game based on health
+  if (enemy.health <= 0 || player.health <= 0 ) {
+    
+  }
 }
 
 animate();
