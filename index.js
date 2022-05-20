@@ -137,8 +137,10 @@ function decreaseTimer() {
   if (timer === 0) {
     if (player.health === enemy.health) {
       document.querySelector("#displayText").innerHTML = "Tie";
+    } else if (player.health > enemy.health) {
+      document.querySelector("#displayText").innerHTML = "Player 1 Wins";
       document.querySelector("#displayText").style.display = "flex";
-    } else if (player.health > enemy.health)
+    }
   }
 }
 
