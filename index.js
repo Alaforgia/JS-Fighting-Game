@@ -134,11 +134,10 @@ function decreaseTimer() {
     timer--;
     document.querySelector("#timer").innerHTML = timer;
   }
-if (player.health === enemy.health) {
-  
-  
-}
-
+  if (player.health === enemy.health) {
+    document.querySelector("displayText").innerHTML = "Tie";
+    document.querySelector("#displayText").style.display = "flex";
+  }
 }
 
 decreaseTimer();
