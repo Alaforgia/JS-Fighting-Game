@@ -138,7 +138,7 @@ function decreaseTimer() {
     if (player.health === enemy.health) {
       document.querySelector("#displayText").innerHTML = "Tie";
       document.querySelector("#displayText").style.display = "flex";
-    } 
+    } else if (player.health > enemy.health)
   }
 }
 
