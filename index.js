@@ -126,6 +126,10 @@ function rectangularCollision({ rectangle1, rectangle2 }) {
     rectangle1.isAttacking
   );
 }
+function determineWinner({player, enemy}) {
+  
+}
+
 // function that handles the in-game timer countdown
 let timer = 60;
 function decreaseTimer() {
