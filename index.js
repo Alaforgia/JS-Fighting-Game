@@ -127,6 +127,7 @@ function rectangularCollision({ rectangle1, rectangle2 }) {
   );
 }
 function determineWinner({ player, enemy }) {
+  document.querySelector("#displayText").style.display = "flex";
   if (player.health === enemy.health) {
     document.querySelector("#displayText").innerHTML = "Tie";
   } else if (player.health > enemy.health) {
@@ -145,7 +146,6 @@ function decreaseTimer() {
     document.querySelector("#timer").innerHTML = timer;
   }
   if (timer === 0) {
-    document.querySelector("#displayText").style.display = "flex";
     determineWinner({ player, enemy });
   }
 
