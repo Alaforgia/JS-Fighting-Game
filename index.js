@@ -128,7 +128,7 @@ function rectangularCollision({ rectangle1, rectangle2 }) {
 }
 
 function determineWinner({ player, enemy }) {
-  cancelTimeout(timer)
+  cancelTimeout(timerId);
   document.querySelector("#displayText").style.display = "flex";
   if (player.health === enemy.health) {
     document.querySelector("#displayText").innerHTML = "Tie";
@@ -149,7 +149,7 @@ function decreaseTimer() {
     document.querySelector("#timer").innerHTML = timer;
   }
   if (timer === 0) {
-    determineWinner({ player, enemy });
+    determineWinner({ player, enemy, timerId });
   }
 }
 
